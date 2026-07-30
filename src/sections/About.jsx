@@ -39,14 +39,14 @@ const About = () => {
           viewport={{ once: true, amount: 0.4 }}
         >
           <motion.div
-            className="relative w-40 h-40 md:w-50 md:h-50 rounded-2xl overflow-hidden shadow-2xl bg-linear-to-br from-[#1cd8d2]/20 to-[#302b63]/20 border border-[#1cd8d2]/25"
+            className="relative w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-2xl bg-linear-to-br from-[#1cd8d2]/20 to-[#302b63]/20 border border-[#1cd8d2]/25"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 200, damping: 18 }}
           >
             <img
               src={profile}
               alt="pp"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover object-top-left"
             />
           </motion.div>
 
