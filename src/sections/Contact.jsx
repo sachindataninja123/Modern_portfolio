@@ -161,10 +161,13 @@ const Contact = () => {
                   Something in mind?
                 </option>
                 <option value="Frontend developer" className="text-black">
-                  Frontend Development
+                 Full-Stack Development
                 </option>
                 <option value="web development" className="text-black">
-                  Web Development
+                  Frontend Development
+                </option>
+                 <option value="web development" className="text-black">
+                  Backend Development
                 </option>
                 <option value="others" className="text-black">
                   Others
