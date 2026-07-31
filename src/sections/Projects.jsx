@@ -284,7 +284,7 @@ const Projects = () => {
         tags: ["React", "Node.js", "Express", "MongoDB", "Web Speech API"],
         link: "https://hiremindai1-client.onrender.com/",
         Code: "https://github.com/sachindataninja123/HireMindAI",
-        bgColor: "#b09a9a", // Light Rose
+        bgColor: "#2A1F3D", // Light Rose
         image: isMobile ? promob1 : pro1,
       },
       {
@@ -294,7 +294,7 @@ const Projects = () => {
         tags: ["React", "Redux Toolkit", "Node.js", "MongoDB", "node-cron"],
         link: "https://tabletap-1.onrender.com/",
         Code: "https://github.com/sachindataninja123/TableTap",
-        bgColor: "#f6edd9c5", // Light Cream
+        bgColor: "#1E2D3D", // Light Cream
         image: isMobile ? promob2 : pro2,
       },
       {
@@ -304,7 +304,7 @@ const Projects = () => {
         tags: ["Node.js", "Express", "Socket.IO", "MongoDB", "Google Maps"],
         link: "https://github.com/sachindataninja123/NexRide-cab_booking_app",
         Code: "https://github.com/sachindataninja123/NexRide-cab_booking_app",
-        bgColor: "#d8e9e4", // Light Mint/Sage
+        bgColor: "#1E3A35", // Light Mint/Sage
         image: isMobile ? promob3 : pro3,
       },
       {
@@ -314,7 +314,7 @@ const Projects = () => {
         tags: ["React", "Redux Toolkit", "Express 5", "MongoDB", "Cloudinary"],
         link: "https://streamhub-frontend-8r5z.onrender.com/",
         Code: "https://github.com/sachindataninja123/streamhub",
-        bgColor: "#dcd8e6", // Light Lavender
+        bgColor: "#3A2424", // Light Lavender
         image: isMobile ? promob4 : pro4,
       },
     ],
@@ -349,7 +349,7 @@ const Projects = () => {
       <div className="sticky top-0 h-screen flex flex-col items-center justify-center">
         {/* Section Heading */}
         <h2
-          className={`text-3xl font-semibold z-10 text-center text-gray-900 ${
+          className={`text-3xl font-semibold z-10 text-center text-gray-100 ${
             isMobile ? "mt-4" : "mt-6"
           }`}
         >
@@ -389,12 +389,12 @@ const Projects = () => {
                       style={{ zIndex: 5 }}
                     >
                       {/* Project Title */}
-                      <h3 className="text-[clamp(1.8rem,5vw,4.2rem)] text-gray-900 italic font-semibold leading-tight drop-shadow-sm">
+                      <h3 className="text-[clamp(1.8rem,5vw,4.2rem)] text-gray-100 italic font-semibold leading-tight drop-shadow-sm">
                         {project.title}
                       </h3>
 
                       {/* Project Description */}
-                      <p className="text-sm sm:text-base text-gray-700 font-medium mt-1 mb-5 line-clamp-2">
+                      <p className="text-sm sm:text-base text-gray-200 font-medium mt-1 mb-5 line-clamp-2">
                         {project.description}
                       </p>
 

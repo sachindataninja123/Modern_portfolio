@@ -37,7 +37,16 @@ const glowVariants = {
 };
 
 const Home = () => {
-  const roles = useMemo(() => ["Frontend Developer", "Web Developer"], []);
+  const roles = useMemo(
+    () => [
+      "Full-Stack Web Developer",
+      "MERN Stack Developer",
+      "React.js Developer",
+      "Node.js Developer",
+      "Problem Solver",
+    ],
+    [],
+  );
 
   const [index, setIndex] = useState(0);
   const [subIndex, setsubIndex] = useState(0);
@@ -56,7 +65,7 @@ const Home = () => {
           setIndex((p) => (p + 1) % roles.length);
         }
       },
-      deleting ? 40 : 60
+      deleting ? 40 : 60,
     );
     return () => clearTimeout(timeOut);
   }, [subIndex, index, deleting, roles]);
@@ -111,9 +120,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              I turn complex ideas into seamless, high-impact web experiences -
-              building modern , scalable , and lightning-fast applications that
-              make a difference.
+             I turn complex ideas into seamless, high-impact web experiences — architecting scalable backends and crafting fast, intuitive frontends that work together seamlessly.
             </motion.p>
             <motion.div
               className="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-6"
@@ -128,7 +135,7 @@ const Home = () => {
                 View My Work
               </a>
               <a
-                 href="/Resume.pdf"
+                href="/Resume.pdf"
                 target="_blank"
                 className="px-6 py-3 rounded-full text-black bg-white font-medium transition-all hover:scale-105"
               >
