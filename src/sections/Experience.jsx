@@ -2,22 +2,22 @@ import { delay, useTransform, motion, useScroll } from "framer-motion";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 
 const experiences = [
+    {
+    role: "Frontend Developer Intern",
+    company: "Vellaration Technologies Pvt. Ltd.",
+    duration: "July 2026 – Present (Hybrid)",
+    description: "Engineered responsive, pixel-perfect web interfaces from Figma designs and built scalable, reusable frontend components with modern web technologies. Collaborated with cross-functional teams to integrate RESTful APIs, optimize performance, and deliver high-quality, production-ready web applications.",
+  },
   {
     role: "Web Developer Intern",
     company: "Infosys Springboard",
     duration: "Oct - Nov 2025",
     description:
-      "Developed a MERN stack web app for inter-college event management with authentication, role-based access, and event management features.",
-  },
-  {
-    role: "Web Developer Intern",
-    company: "Oasis Infobyte",
-    duration: "June-2025",
-    description: "Gained hands-on web development experience.",
+      "Built a full-stack MERN application for inter-college event management with secure authentication, role-based access, and scalable event management features.",
   },
   {
     role: "Bachelor of Technology in Computer Science",
-    company: "Lingayas Vidyapeeth",
+    company: "Lingaya's Vidyapeeth",
     duration: "2024 - Present ",
     description:
       "Pursuing a Bachelor of Technology in Computer Science engineering.",
@@ -51,10 +51,10 @@ function ExperienceItem({ exp, idx, start, end, scrollYProgress, layout }) {
           transition={{ duartion: 0.4, delay: idx * 0.15 }}
         >
           <h3 className="text-xl font-semibold">{exp.role}</h3>
-          <p className="text-md text-gray-400 mb-3">
+          <p className="text-base text-gray-400 mb-3">
             {exp.company} | {exp.duration}
           </p>
-          <p className="text-md text-gray-300 wrap-break-word">
+          <p className="text-sm text-gray-300 wrap-break-word">
             {exp.description}
           </p>
         </motion.article>
